@@ -19,13 +19,19 @@ public class Main {
                 "Семенович",
                 "Николай",
                 "02.11.1971");
+        Passport passportJack1 = new Passport(Collections.singleton("3607854269"),
+                "мрлмро",
+                "мломрол",
+                "млрол",
+                "02.10.1971");
+
 
         Set<Passport> passportNumbers = new HashSet<>();
 
         passportNumbers.add(passportSidor);
         passportNumbers.add(passportBob);
         passportNumbers.add(passportJack);
-        passportNumbers.add(passportJack);
+        passportNumbers.add(passportJack1);
 
         for (Passport passportNumber : passportNumbers) {
             System.out.println(passportNumber);

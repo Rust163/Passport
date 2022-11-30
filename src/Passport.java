@@ -27,11 +27,12 @@ public class Passport {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Passport passport = (Passport) o;
-        return Objects.equals(passportNumbers, passport.passportNumbers) && Objects.equals(lastName, passport.lastName) && Objects.equals(secondName, passport.secondName) && Objects.equals(firstName, passport.firstName) && Objects.equals(birthDate, passport.birthDate);
+        return Objects.equals(
+                passportNumbers, passport.passportNumbers) ;
     }
     @Override
     public int hashCode() {
-        return Objects.hash(passportNumbers, lastName, secondName, firstName, birthDate);
+        return Objects.hash(passportNumbers);
     }
     public boolean checkedNumber(String s) {
         return passportNumbers.contains(s);
